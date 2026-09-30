@@ -4,7 +4,7 @@
 
 Принимает текстовый запрос, ищет по тексту документа в Elasticsearch и возвращает первые 20 документов со всеми полями из БД, отсортированные по дате создания. Умеет удалять документ по id из БД и индекса.
 
-Стек: Python 3.12, FastAPI, SQLAlchemy (async) + asyncpg, PostgreSQL 16, Elasticsearch 8.13, Docker, Pytest.
+Стек: Python 3.12, FastAPI, SQLAlchemy (async) + asyncpg, PostgreSQL, Elasticsearch, Docker, Pytest.
 
 # Запуск
 
@@ -21,7 +21,7 @@ http://localhost:8000/docs
 
 # Импорт данных
 
-Положи CSV-файл в data/posts.csv. Ожидаемые колонки:
+Необходимо положить CSV-файл в data/posts.csv. Ожидаемые колонки:
 
 text,created_date,rubrics
 
